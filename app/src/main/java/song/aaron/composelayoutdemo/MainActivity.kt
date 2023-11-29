@@ -44,11 +44,11 @@ class MainActivity : ComponentActivity() {
 fun MainScreen() {
     Row(
         verticalAlignment = Alignment.CenterVertically,
-        horizontalArrangement = Arrangement.Center
+        horizontalArrangement = Arrangement.SpaceEvenly
     ) {
-        TextCell(text = "1")
-        TextCell(text = "2")
-        TextCell(text = "3")
+        TextCell(text = "1", Modifier.align(Alignment.Top))
+        TextCell(text = "2", Modifier.align(Alignment.CenterVertically))
+        TextCell(text = "3", Modifier.align(Alignment.Bottom))
     }
 }
 
